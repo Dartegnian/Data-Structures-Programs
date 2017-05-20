@@ -1,2 +1,6 @@
 # Data-Structures-Programs
-Some programs I made for my Data Structures class.
+These are just some of the programs I have developed for my Data Structures class. The programs are the following:
+* Infix and postfix calculator
+* Array/list sorter and manager
+
+I'll add the other programs soon.
