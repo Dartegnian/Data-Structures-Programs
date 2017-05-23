@@ -35,9 +35,8 @@ public class DASTRUCFIX {
                 if (DASTRUCOP.clearFixStore())
                     JOptionPane.showMessageDialog(null, "Storage cleared!", "Success", JOptionPane.INFORMATION_MESSAGE);
             }
-            else if (decision.equals("Close")) {
+            else if (decision.equals("Close"))
                 System.exit(0);
-            }
         }
     }
 }

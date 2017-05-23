@@ -36,6 +36,7 @@ public class DastrucOne {
                     countR = 0;
                 }
             }
+
             else if (decision.equals("Remove")) {
                 if (lList.isEmpty()) {
                     JOptionPane.showMessageDialog(null, "You have nothing to remove because you currently don't have any items in your list.", "No items", JOptionPane.ERROR_MESSAGE);
@@ -57,8 +58,10 @@ public class DastrucOne {
                     }
                 }
             }
+
             else if (decision.equals("Print")) {
                 printWhat = (String) JOptionPane.showInputDialog(null, "Here are your choices", "Choices", JOptionPane.PLAIN_MESSAGE, null, new Object[] { "Print everything to a file", "Print everything", "Print only one item"}, "Print");
+
                 if (printWhat.equals("Print everything to a file")) {
                     if (lList.isEmpty()) {
                         JOptionPane.showMessageDialog(null, "You can't print anything because you currently don't have any items in your list.", "No items", JOptionPane.ERROR_MESSAGE);
@@ -105,6 +108,7 @@ public class DastrucOne {
                         JOptionPane.showMessageDialog(null, "Your list has been printed.\nPlease look for an Output.txt file in the root directory.", "List successfully printed", JOptionPane.INFORMATION_MESSAGE);
                     }
                 }
+
                 else if (printWhat.equals("Print everything")) {
                     if (lList.isEmpty()) {
                         JOptionPane.showMessageDialog(null, "You can't print anything because you currently don't have any items in your list.", "No items", JOptionPane.ERROR_MESSAGE);
@@ -115,6 +119,7 @@ public class DastrucOne {
                         }
                     }
                 }
+
                 else if (printWhat.equals("Print only one item")) {
                     if (lList.isEmpty()) {
                         JOptionPane.showMessageDialog(null, "You can't print anything because you currently don't have any items in your list.", "No items", JOptionPane.ERROR_MESSAGE);
@@ -125,6 +130,7 @@ public class DastrucOne {
                     }
                 }
             }
+
             else if (decision.equals("Clear list")) {
                 if (lList.isEmpty()) {
                     JOptionPane.showMessageDialog(null, "You have nothing to clear because you currently don't have any items in your list.", "No items", JOptionPane.ERROR_MESSAGE);
@@ -134,6 +140,7 @@ public class DastrucOne {
                     JOptionPane.showMessageDialog(null, "Your list has been cleared", "List cleared", JOptionPane.PLAIN_MESSAGE);
                 }
             }
+            
             else if (decision.equals("View list")) {
                 if (lList.isEmpty()) {
                     JOptionPane.showMessageDialog(null, "You have nothing to view because you currently don't have any items in your list.", "No items", JOptionPane.ERROR_MESSAGE);
